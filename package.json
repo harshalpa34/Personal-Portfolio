@@ -10,12 +10,15 @@
     "export": "next export"
   },
   "dependencies": {
+    "@radix-ui/react-tooltip": "^1.1.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.11",
+    "lucide-react": "^0.397.0",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
+    "swiper": "^11.1.4",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {

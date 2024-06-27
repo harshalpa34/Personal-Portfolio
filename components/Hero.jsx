@@ -5,7 +5,6 @@ import { useState } from "react";
 
 const Hero = () => {
   const [isMouseEnter, setIsMouseEnter] = useState(false);
-  const wrapperClass = "mt-2 w-full";
   const textClasses =
     "mt-1 inline custom-cursor-hover-target font-[Rowdies] font-semibold text-stone-300 hover:text-stone-200 text-nowrap";
   return (
@@ -24,7 +23,7 @@ const Hero = () => {
       <p
         className={cn(
           textClasses,
-          "text-[1.9rem] md:text-[3rem] lg:text-[4rem] text-zinc-400 font-bold hover:text-zinc-300"
+          "text-[1.7rem] md:text-[3rem] lg:text-[4rem] text-zinc-400 font-bold hover:text-zinc-300"
         )}
       >
         FRONTEND DEVELOPER !
@@ -33,7 +32,7 @@ const Hero = () => {
       <p
         className={cn(
           textClasses,
-          "text-[1.9rem] md:text-[3rem] lg:text-[4rem]  text-zinc-400 font-bold hover:text-zinc-300"
+          "text-[1.7rem] md:text-[3rem] lg:text-[4rem]  text-zinc-400 font-bold hover:text-zinc-300"
         )}
       >
         FULLSTACK DEVELOPER !!

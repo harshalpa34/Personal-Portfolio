@@ -3,26 +3,19 @@
 import { experienceData } from "@/utils/data";
 import { motion } from "framer-motion";
 const About = () => {
-  const animate = {
-    y: 0,
-    opacity: 1,
-  };
-
-  const listItemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
-  };
-
   return (
-    <div className="text-white mt-8 md:mt-20 ">
+    <div className="text-white mt-10 md:mt-40 ">
       <h2 className="text-4xl md:text-5xl font-[Rowdies] ">About me</h2>
-      <div className="flex gap-4 mt-8 flex-col md:flex-row md:items-center ">
+      <div className="flex gap-4 mt-4 flex-col md:flex-row md:items-center ">
         <motion.img
           src="/profilePhoto.jpeg"
           alt="Harshal Pagare"
-          className="scale-0 rounded-[8px] overflow-hidden flex-shrink-0 object-cover w-40 h-40  md:w-[200px] md:h-[200px]"
+          className="opacity-0 rounded-[8px] overflow-hidden flex-shrink-0 object-cover w-40 h-40  md:w-[200px] md:h-[200px]"
           whileInView={{
-            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 0.3,
+            },
           }}
         />
         <div>
@@ -40,9 +33,12 @@ const About = () => {
           </motion.p>
           <motion.p
             className=" opacity-0  text-xs md:text-sm text-zinc-300/[0.8] font-[Poppins] w-[90%] "
-            whileInView={{ opacity: 1 , transition : {
-              delay: 0.3
-            }}}
+            whileInView={{
+              opacity: 1,
+              transition: {
+                delay: 0.3,
+              },
+            }}
           >
             Having worked as a full stack developer for two years, with a focus
             on Next.js and React.js, I have a solid background in building
@@ -58,7 +54,7 @@ const About = () => {
         </div>
       </div>
 
-      <h2 className="text-4xl md:text-5xl font-[Rowdies] mt-10">Experience</h2>
+      <h2 className="text-4xl md:text-5xl font-[Rowdies] mt-4">Experience</h2>
 
       <ol className="border-s mt-6 border-neutral-300 dark:border-neutral-500 w-[90%]">
         {experienceData.map((item, index) => (
@@ -71,12 +67,18 @@ const About = () => {
                 delay: 0.5 * index,
               },
             }}
-
           >
             <div className="flex-start flex items-center ">
               <div className="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"></div>
               <p className="text-md text-neutral-300 font-semibold">
-                {item.companyName} <span className=""></span>
+                {item.companyName}
+                <span className="text-xs ml-2 opacity-60">
+                  ({item.startDate.month + " " + item.startDate.year} -{" "}
+                  {item.isPresent
+                    ? "Present"
+                    : item.endDate.month + " " + item.endDate.year}
+                  )
+                </span>
               </p>
             </div>
             <div className="mb-5 ms-4 mt-1">
@@ -84,7 +86,7 @@ const About = () => {
                 {item.jobPost}
               </h4>
               <ul
-                className=" text-xs md:text-sm mb-1 text-neutral-500 dark:text-neutral-300 list-disc pl-4"
+                className="text-xs md:text-sm mb-1 text-neutral-500 dark:text-neutral-300 list-disc pl-4"
                 initial="hidden"
                 animate="visible"
                 transition={{ staggerChildren: 0.3 }}

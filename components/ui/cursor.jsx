@@ -26,22 +26,20 @@ const Cursor = ({ isMouseEnter }) => {
       const target = e.target.getBoundingClientRect();
       const cursor = cursorRef.current;
       if (cursor) {
-        cursor.style.transform = "scale(2)";
         cursor.style.width = `${target.width + 10}px`;
         cursor.style.height = `${target.height + 10}px`;
         cursor.style.borderRadius = "0";
-        cursor.style.transition = "0.3s";
+        cursor.style.transition = "0.1s";
       }
     };
 
     const handleMouseLeave = () => {
       const cursor = cursorRef.current;
       if (cursor) {
-        cursor.style.transform = "scale(1)";
         cursor.style.width = `${cursorSize}px`;
         cursor.style.height = `${cursorSize}px`;
         cursor.style.borderRadius = "50%";
-        cursor.style.transition = "0.3s";
+        cursor.style.transition = "0.1s";
       }
     };
 
