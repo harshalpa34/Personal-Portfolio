@@ -17,6 +17,7 @@ module.exports = {
     extend: {
       translate: {
         "-full": "-100%",
+        "-half": "-50%",
       },
     },
   },
