@@ -13,8 +13,8 @@ const Hero = () => {
       onMouseEnter={() => setIsMouseEnter(true)}
       onMouseLeave={() => setIsMouseEnter(false)}
     >
-      <p className={cn(textClasses, "text-[1.5rem] font-[Poppins] font-400")}>
-        Hello world!
+      <p className={cn(textClasses, "text-[1.3rem] font-[Poppins] font-400")}>
+        Hey There,
       </p>
 
       <p className={cn(textClasses, "text[1.7rem] md:text-[3rem] ")}>

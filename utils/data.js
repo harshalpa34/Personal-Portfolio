@@ -36,6 +36,8 @@ import webPlayer7 from "../public/projects/web-player-7.png";
 import webPlayer8 from "../public/projects/web-player-8.png";
 import webPlayer9 from "../public/projects/web-player-9.png";
 import webPlayer10 from "../public/projects/web-player-10.png";
+import dashboard from "../public/projects/dashboard.png";
+import taskHelper from "../public/projects/task-helper.png";
 
 import { Download, Linkedin, Mail, Phone } from "lucide-react";
 
@@ -71,6 +73,38 @@ export const experienceData = [
     achievements: [
       "Freelanced as a web developer for a marketing agency, developed custom web solutions to enhance digital presence and user experience.",
     ],
+  },
+];
+
+export const navItems = [
+  {
+    icon: <Linkedin />,
+    name: "LinkedIn",
+    isDownload: false,
+    link: "https://www.linkedin.com/in/harshal-pagare-4169221b3",
+    target: "_blank",
+  },
+  {
+    icon: <Phone />,
+    name: "WhatsApp",
+    isDownload: false,
+    link: "https://wa.me/7387709840",
+    target: "_blank",
+  },
+  {
+    icon: <Mail />,
+    name: "Mail",
+    isDownload: false,
+    link: "mailto:harshalpa34@gmail.com",
+    target: "_blank",
+  },
+
+  {
+    icon: <Download />,
+    name: "Resume",
+    isDownload: true,
+    link: "https://drive.google.com/file/d/1BYXeTurMdeaohnwi-OO7CzTdMJtuRoVz/view",
+    target: "_blank",
   },
 ];
 
@@ -333,36 +367,113 @@ export const projectData = [
     isDown: true,
     imageArray: [Studio],
   },
-];
-
-export const navItems = [
   {
-    icon: <Linkedin />,
-    name: "LinkedIn",
-    isDownload: false,
-    link: "https://www.linkedin.com/in/harshal-pagare-4169221b3",
-    target: "_blank",
+    title: "Admin Dashboard",
+    about:
+      "The Admin Dashboard is a comprehensive tool designed to streamline the management of content, user activities, and business operations. It provides a centralized platform for administrators to efficiently handle various tasks, ensuring smooth and effective management. The dashboard is equipped with an array of features that cater to the diverse needs of businesses, offering robust functionalities for user management, content control, and operational analytics.",
+    subPoints: [
+      {
+        title: "Content and Stats Management",
+        about:
+          "Easily manage and analyze content and statistics with server-driven carousels, content uploading & management, and detailed analytics & reporting.",
+      },
+      {
+        title: "Server-driven Carousels",
+        about:
+          "Create and manage carousel displays driven by server data to ensure dynamic content presentation.",
+      },
+      {
+        title: "User Management",
+        about:
+          "Manage user roles and permissions with role-based access control, block or unblock users, and add new team members to enhance collaboration.",
+      },
+      {
+        title: "Role-Based Access Control (RBAC)",
+        about:
+          "Define and manage user roles and permissions to ensure secure and appropriate access to various dashboard functionalities.",
+      },
+      {
+        title: "User Blocking",
+        about:
+          "Block and unblock users as needed to maintain community standards and security.",
+      },
+      {
+        title: "Adding New Team Members",
+        about:
+          "Add and manage team members with appropriate roles and permissions to enhance collaboration.",
+      },
+      {
+        title: "Financial Management",
+        about:
+          "Generate and review detailed payment reports, implement monetization strategies, and create and manage subscription plans and promotional offers.",
+      },
+      {
+        title: "Payment Reports",
+        about:
+          "Generate and review detailed payment reports to monitor financial transactions and performance.",
+      },
+      {
+        title: "Monetization Module",
+        about:
+          "Implement and manage monetization strategies to optimize revenue streams.",
+      },
+      {
+        title: "Creating Plans",
+        about:
+          "Design and manage subscription or service plans tailored to different user needs and preferences.",
+      },
+      {
+        title: "Offers & Promocodes",
+        about:
+          "Create and manage promotional offers and discount codes to attract and retain users.",
+      },
+      {
+        title: "Operational Management",
+        about:
+          "Configure and control carousel content, manage user status, and continuously build and improve the dashboard with new features and enhancements.",
+      },
+      {
+        title: "Server-driven Carousels",
+        about:
+          "Configure and control carousel content from the server for consistent and dynamic displays.",
+      },
+      {
+        title: "User Block & Unblock",
+        about:
+          "Manage user status to ensure community standards and compliance.",
+      },
+      {
+        title: "Building and Development",
+        about:
+          "Continuously build and improve the dashboard with new features and enhancements.",
+      },
+    ],
+    image: dashboard,
+    isDown: true,
   },
   {
-    icon: <Phone />,
-    name: "WhatsApp",
-    isDownload: false,
-    link: "https://wa.me/7387709840",
-    target: "_blank",
-  },
-  {
-    icon: <Mail />,
-    name: "Mail",
-    isDownload: false,
-    link: "mailto:harshalpa34@gmail.com",
-    target: "_blank",
-  },
-
-  {
-    icon: <Download />,
-    name: "Resume",
-    isDownload: true,
-    link: "https://drive.google.com/file/d/1BYXeTurMdeaohnwi-OO7CzTdMJtuRoVz/view",
-    target: "_blank",
+    title: "AI Task Helper",
+    about:
+      "Task Helper leverages Google Gemini Integration to manage and optimize your daily tasks. By utilizing AI, users can receive suggestions to plan and complete tasks effectively, enhancing productivity and organization.",
+    subPoints: [
+      {
+        title: "AI-Driven Task Suggestions",
+        about:
+          "Receive intelligent suggestions from the AI to prioritize and plan tasks based on your schedule and preferences.",
+      },
+      {
+        title: "Task Management",
+        about:
+          "Create, edit, and delete tasks easily. Organize your tasks with categories, tags, and deadlines for better efficiency.",
+      },
+      {
+        title: "User-Friendly Interface",
+        about:
+          "Enjoy a clean, intuitive interface that makes task management straightforward and enjoyable.",
+      },
+    ],
+    demoLink: "https://taskhelperai-harshal-pagares-projects.vercel.app/",
+    image: taskHelper,
+    isDown: false,
   },
 ];

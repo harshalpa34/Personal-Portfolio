@@ -16,7 +16,7 @@ export const HeroHighlight = ({ children, className, containerClassName }) => {
   return (
     <div
       className={cn(
-        "relative h-full  flex items-center  bg-black justify-center w-full group",
+        "relative h-full  flex items-center  bg-stone-950 justify-center w-full group",
         containerClassName
       )}
       onMouseMove={handleMouseMove}
@@ -78,8 +78,8 @@ export const Highlight = ({ children, className }) => {
 
 export function GridSmallBackground({ children }) {
   return (
-    <div className="min-h-screen w-full bg-black   bg-grid-small-white/[0.2]  relative flex items-center justify-center">
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black/[0.6]  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+    <div className="min-h-screen w-full bg-stone-950   bg-grid-small-white/[0.2]  relative flex items-center justify-center">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-stone-950  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className=" bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
         {children}
       </div>

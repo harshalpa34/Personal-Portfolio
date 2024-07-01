@@ -8,7 +8,7 @@ const About = () => {
       <h2 className="text-4xl md:text-5xl font-[Rowdies] ">About me</h2>
       <div className="flex gap-4 mt-4 flex-col md:flex-row md:items-center ">
         <motion.img
-          src="/profilePhoto.jpeg"
+          src="/profilePhoto.jpg"
           alt="Harshal Pagare"
           className="opacity-0 rounded-[8px] overflow-hidden flex-shrink-0 object-cover w-40 h-40  md:w-[200px] md:h-[200px]"
           whileInView={{
