@@ -15,7 +15,6 @@ const page = ({ params: { projectTitle } }) => {
   const project = projectData.find((item) => {
     return item.title.toLowerCase().split(" ").join("-") === projectTitle;
   });
-  console.log(project);
 
   return (
     <div className="bg-stone-950 min-h-screen">
